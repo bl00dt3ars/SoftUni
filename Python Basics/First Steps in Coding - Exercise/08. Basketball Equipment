@@ -1,0 +1,10 @@
+annual_fee = int(input())
+
+basketball_sneakers_price = annual_fee * (1 - 40 / 100)
+basketball_outfit_price = basketball_sneakers_price * (1 - 20 / 100)
+basketball_ball_price = basketball_outfit_price / 4
+basketball_accessories_price = basketball_ball_price / 5
+total_price = annual_fee + basketball_sneakers_price + basketball_outfit_price + basketball_ball_price\
+              + basketball_accessories_price
+
+print(total_price)
