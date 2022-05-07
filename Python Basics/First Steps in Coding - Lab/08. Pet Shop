@@ -2,4 +2,5 @@ dog_food_packages = int(input())
 cat_food_packages = int(input())
 dog_food_price_per_package = 2.5
 cat_food_price_per_package = 4
+
 print(f"{dog_food_packages * dog_food_price_per_package + cat_food_packages * cat_food_price_per_package} lv.")
