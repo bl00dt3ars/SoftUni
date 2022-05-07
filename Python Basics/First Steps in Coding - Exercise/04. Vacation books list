@@ -1,0 +1,5 @@
+all_pages = int(input())
+pages_per_hour = int(input())
+available_days = int(input())
+
+print(int(all_pages / pages_per_hour / available_days))
