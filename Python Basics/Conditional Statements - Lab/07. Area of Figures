@@ -1,0 +1,21 @@
+import math
+
+figure = input()
+area = ""
+
+if figure == "square":
+    a = float(input())
+    area = math.pow(a, 2)
+elif figure == "rectangle":
+    a = float(input())
+    b = float(input())
+    area = a * b
+elif figure == "circle":
+    a = float(input())
+    area = math.pi * math.pow(a, 2)
+elif figure == "triangle":
+    a = float(input())
+    b = float(input())
+    area = a * b / 2
+
+print(f"{area:.3f}")
