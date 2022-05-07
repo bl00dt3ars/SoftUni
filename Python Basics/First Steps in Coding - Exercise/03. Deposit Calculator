@@ -1,0 +1,5 @@
+deposit_amount = float(input())
+months = int(input())
+annual_interest_rate = float(input())
+
+print(deposit_amount + months * ((deposit_amount * annual_interest_rate / 100) / 12))
