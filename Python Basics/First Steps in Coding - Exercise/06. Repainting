@@ -1,0 +1,16 @@
+protective_nylon_price = 1.50
+paint_price = 14.50
+paint_thinner = 5.00
+bags = 0.40
+
+needed_protective_nylon = int(input()) + 2
+needed_paint = int(input()) * (1 + 10 / 100)
+needed_paint_thinner = int(input())
+needed_hours_for_job = int(input())
+
+material_price = needed_protective_nylon * protective_nylon_price + needed_paint * paint_price + \
+                 needed_paint_thinner * paint_thinner + bags
+price_for_workers = material_price * 30 / 100 * needed_hours_for_job
+total_price = material_price + price_for_workers
+
+print(f"{total_price:.2f}")
