@@ -1,0 +1,7 @@
+length = int(input())
+width = int(input())
+height = int(input())
+percentage_of_occupied_area = float(input())
+needed_litters_water = length * width * height / 1000
+
+print(needed_litters_water * (1 - percentage_of_occupied_area / 100))
