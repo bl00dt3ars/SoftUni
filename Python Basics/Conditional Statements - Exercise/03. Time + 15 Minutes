@@ -1,0 +1,13 @@
+hour = int(input())
+minutes = int(input())
+total_time = hour * 60 + minutes + 15
+sum_hour = total_time // 60
+sum_minutes = total_time % 60
+
+if sum_hour == 24:
+    sum_hour = 0
+
+if sum_minutes < 10:
+    print(f"{sum_hour}:0{sum_minutes}")
+else:
+    print(f"{sum_hour}:{sum_minutes}")
