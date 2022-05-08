@@ -1,0 +1,22 @@
+toy_prices = {"puzzle": 2.60, "talking_doll": 3, "teddy_bear": 4.10, "minion": 8.20, "truck": 2}
+price_of_the_trip = float(input())
+puzzles = int(input())
+talking_dolls = int(input())
+teddy_bears = int(input())
+minions = int(input())
+trucks = int(input())
+store_rental = 10 / 100
+discount = 0
+total_toys = puzzles + talking_dolls + teddy_bears + minions + trucks
+
+if total_toys >= 50:
+    discount = 25 / 100
+
+total_profit = (puzzles * toy_prices["puzzle"] + talking_dolls * toy_prices["talking_doll"] + teddy_bears *
+                toy_prices["teddy_bear"] + minions * toy_prices["minion"] + trucks * toy_prices["truck"]) * \
+               (1 - discount) * (1 - store_rental)
+
+if total_profit >= price_of_the_trip:
+    print(f"Yes! {total_profit - price_of_the_trip:.2f} lv left.")
+else:
+    print(f"Not enough money! {price_of_the_trip - total_profit:.2f} lv needed.")
